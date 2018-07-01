@@ -44,6 +44,12 @@ body {
 }
 
 
+/*  RD HERE  */
+.title-rupe
+{
+  font-family: 'Cinzel', serif;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
 	 background: url(straya.jpg) no-repeat center center fixed; 
