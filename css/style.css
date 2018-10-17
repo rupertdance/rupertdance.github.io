@@ -58,27 +58,66 @@ textarea {
 
 
 body{
-  max-width: 1440px;
+  max-width: 100%;
   padding: 0 3rem;
+  margin-bottom: 1em;
 
   font-size: 18px; 
+  border-top: 8px solid #52076d;
   /* base size of 22px */
 }
 
 @media only screen and (max-width: 800px) {
     body{
-        padding: 0 2rem;    
+        padding: 0 1rem;  
+    }
+
+    body .container{
+    
+        flex-direction: column;
+    
     }
 }
 
 
 .container{
-  max-width: 800px;
+  /*max-width: 800px;*/
   margin: 0 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0;
+
+
 }
+.container h2{
+    /*color: #880bb5;*/
+}
+.column{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.left{
+
+}
+
+.right{
+    font-size: 10em;
+    justify-content: center;
+    align-items: center; /* align vertical */
+    display: flex;
+    cursor: pointer;
+
+}
+
+
 
 .main-title{
     text-align: right;
+    /*color: #880bb5;*/
+    color: #640885;
 }
 
 
@@ -87,10 +126,25 @@ body{
 }
 
 
+.footer{
+    
+    margin-top: 4em;
+    font-size: 70%;
+    color: #666;
+    text-align: center;
+}
 
 
 
-
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 
 
 
